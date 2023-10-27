@@ -22,3 +22,7 @@ svg, img {
   display: block;
   width: 100%;
 }
+
+.border {
+  border: 1px solid red;
+}

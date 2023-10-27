@@ -31,6 +31,10 @@ svg, img {
     width: 100%;
 }
 
+.border{
+    border: 1px solid red;
+}
+
 @import "partials/menu";
 @import "partials/swiper";
 @import "partials/icons";
