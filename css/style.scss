@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
+
 html{
     scroll-behavior: smooth;
     font-size: 62.5%; //10px
@@ -19,3 +25,14 @@ body{
 
     background-color: #1a1a1a;
 }
+
+svg, img {
+    display: block;
+    width: 100%;
+}
+
+@import "partials/menu";
+@import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations";
