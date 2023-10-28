@@ -1,0 +1,33 @@
+a{
+    @include typeface-2(p2, desktop);
+    text-decoration: none;
+    color: $black-normal;
+    transition: .5s ease;
+
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.btn{
+    background: linear-gradient(221deg, $secondary-normal 14.43%, $primary-normal 85.28%);
+    border-radius: 16px;
+    padding: 1.2rem 3.2rem;
+    transition: .3s ease;
+    color: $white-light;
+
+    box-shadow: 0px 1.94738px 2.71728px 0px rgba(169, 80, 196, 0.05), 
+    0px 5.38427px 7.51293px 0px rgba(169, 80, 196, 0.07), 
+    0px 12.96324px 18.08824px 0px rgba(169, 80, 196, 0.09), 
+    0px 43px 60px 0px rgba(169, 80, 196, 0.14);
+
+    &:hover{
+        transform: scale(1.02);
+        box-shadow: 0px 1.18992px 2.07544px 0px rgba(169, 80, 196, 0.08), 
+        0px 2.85954px 4.98758px 0px rgba(169, 80, 196, 0.12), 
+        0px 5.38427px 9.39116px 0px rgba(169, 80, 196, 0.15), 
+        0px 9.60461px 16.75223px 0px rgba(169, 80, 196, 0.17),
+        0px 17.96437px 31.33321px 0px rgba(169, 80, 196, 0.19), 
+        0px 43px 75px 0px rgba(169, 80, 196, 0.26);
+    }
+}
