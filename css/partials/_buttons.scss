@@ -31,3 +31,45 @@ a{
         0px 43px 75px 0px rgba(169, 80, 196, 0.26);
     }
 }
+
+.link{
+    display: inline-block;
+
+    color: $primary-normal;
+    background-image: url("/svg/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    font-size: 1.8rem;
+
+    padding: 1.6rem 1.6rem 1.6rem 4rem;
+
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+
+        top: 75%;
+        left: 5.6rem;
+
+        width: 0%;
+        height: 2px;
+        border-radius: 2px;
+        transition: .5s ease;
+
+        background-color: $secondary-light;
+        
+    }
+
+    &:hover{
+        opacity: 0.8;
+        padding-left: 6.4rem;
+        background-position: 0.8rem 50%;
+        
+        &::after{
+            width: 100%;
+            background-color: $secondary-light;
+        }
+    }
+}

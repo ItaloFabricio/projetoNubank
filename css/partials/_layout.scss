@@ -169,3 +169,23 @@ $container-s: 540px;
         width: 100%;
     }
 }
+
+.list-item{
+    list-style: none;
+    position: relative;
+
+    padding: 0.8rem 0.8rem 0.8rem 7.2rem;
+    margin-bottom: 4.8rem;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -8px;
+        
+        display: block;
+
+        width: 64px;
+        height: 64px;
+    }
+}

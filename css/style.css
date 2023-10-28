@@ -125,6 +125,22 @@
   }
 }
 
+.list-item {
+  list-style: none;
+  position: relative;
+  padding: 0.8rem 0.8rem 0.8rem 7.2rem;
+  margin-bottom: 4.8rem;
+}
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -256,6 +272,38 @@ a:hover {
 .btn:hover {
   transform: scale(1.02);
   box-shadow: 0px 1.18992px 2.07544px 0px rgba(169, 80, 196, 0.08), 0px 2.85954px 4.98758px 0px rgba(169, 80, 196, 0.12), 0px 5.38427px 9.39116px 0px rgba(169, 80, 196, 0.15), 0px 9.60461px 16.75223px 0px rgba(169, 80, 196, 0.17), 0px 17.96437px 31.33321px 0px rgba(169, 80, 196, 0.19), 0px 43px 75px 0px rgba(169, 80, 196, 0.26);
+}
+
+.link {
+  display: inline-block;
+  color: #82269E;
+  background-image: url("/svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 1.8rem;
+  padding: 1.6rem 1.6rem 1.6rem 4rem;
+  position: relative;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 5.6rem;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  background-color: #BB71D2;
+}
+.link:hover {
+  opacity: 0.8;
+  padding-left: 6.4rem;
+  background-position: 0.8rem 50%;
+}
+.link:hover::after {
+  width: 100%;
+  background-color: #BB71D2;
 }
 
 .s-0 {
@@ -848,6 +896,47 @@ header {
 }
 .nav-link-mobile:hover::after {
   width: 100%;
+}
+
+.dropshadow {
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-mobile::after {
+  background-image: url("/svg/icon-mobile.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+.bg-icon-mobile:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("/svg/icon-mobile.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+.bg-icon-card:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-check::after {
+  background-image: url("/svg/icon-check.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+.bg-icon-check:hover::after {
+  transform: scale(1.05);
 }
 
 .div-card {
