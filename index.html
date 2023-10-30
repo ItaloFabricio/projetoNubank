@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="./js/svg-inject.min.js"></script>
 </head>
 <body>
@@ -180,9 +181,93 @@
         </div>
     </section>
 
+    <!-- ========= SECTION SLIDER ========= -->
 
-    <!-- ========= MENU MOBILE ========= -->
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio qui ipsum vero tempore id! Dolore velit quae nihil. 
+                        Vitae deleniti veniam, at laboriosam rem officiis 
+                        tempore numquam totam earum quis.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio qui ipsum vero tempore id! Dolore velit quae nihil. 
+                        Vitae deleniti veniam, at laboriosam rem officiis 
+                        tempore numquam totam earum quis.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio qui ipsum vero tempore id! Dolore velit quae nihil. 
+                        Vitae deleniti veniam, at laboriosam rem officiis 
+                        tempore numquam totam earum quis.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio qui ipsum vero tempore id! Dolore velit quae nihil. 
+                        Vitae deleniti veniam, at laboriosam rem officiis 
+                        tempore numquam totam earum quis.
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Optio qui ipsum vero tempore id! Dolore velit quae nihil. 
+                        Vitae deleniti veniam, at laboriosam rem officiis 
+                        tempore numquam totam earum quis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+    
+
+
+    <!-- ========= JS ========= -->
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            sliderPerview: 'auto',
+            spaceBeteween: 40,
+            grapCursor: true,
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation:{
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </script>
 
 </body>
 </html>
