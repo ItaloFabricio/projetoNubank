@@ -239,3 +239,24 @@ $container-s: 540px;
         align-items: center;
     }
 }
+
+.bg-invite{
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.svg-invite{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    z-index: -1;
+
+    @include responsive(s){
+        transform: scale(1.5);
+    }
+}
