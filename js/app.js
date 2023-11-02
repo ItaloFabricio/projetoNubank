@@ -66,3 +66,15 @@ const showMenu = (toggleId, navId) => {
 }
 
 showMenu('bx', 'menu-mobile');
+
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav-link-mobile')
+const bx = document.getElementById('bx')
+
+function linkAction(){
+    const navMenu = document.getElementById('menu-mobile')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('active-menu-mobile');
+    bx.classList.toggle('active-bx');
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
