@@ -1230,7 +1230,7 @@ header {
   height: 217.6px;
   border-radius: 12px;
   transform-origin: center center;
-  background-color: red;
+  background-color: transparent;
   z-index: -1;
   animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
